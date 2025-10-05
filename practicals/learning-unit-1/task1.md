@@ -58,6 +58,24 @@ For Example: See `nathans-characters.py`
 
 ### Make a simple top trumps game
 
+Write some simple tests are the bottom of your code using if statements to compare some of the stats.
+
+Here is an example of how this might look:
+
+```python
+
+# Compare directly using the key
+if character_1["speed"] > character_2["speed"]:
+    print(f"{character_1['name']} wins!")
+elif character_2["speed"] > character_1["speed"]:
+    print(f"{character_2['name']} wins!")
+else:
+    print("It's a tie!")
+
+```
+
+### Modify the compare_game.py
+
 There is some code you can use in the file `compare_game.py`.
 Have a play around getting that running. 
 
