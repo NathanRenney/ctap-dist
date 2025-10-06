@@ -53,16 +53,20 @@ def generate_alien_profiles(n):
 
     for _ in range(n):
         species = random.choice(species_list)
-        planet = random.choice(planet_list)
-        has_visa = random.choice([True, False])
-        criminal_record = random.choice([True, False])
-        items = random.sample(item_pool, k=random.randint(1, 4))
+        planet = random.choice(planet_list) 
+        dest_planet = random.choice(planet_list) 
+        has_visa = random.random() < 0.15
+        temperature = random.random() * 100
+        wanted = random.random() < 0.05
+        items = random.sample(item_list, k=random.randint(1, 4))
 
         profile = {
             "species": species,
-            "planet": planet,
+            "current_planet": planet,
+            "destination_planet": dest_planet,
             "has_visa": has_visa,
-            "criminal_record": criminal_record,
+            "temperature": temperature,
+            "wanted": wanted,
             "items": items
         }
 
@@ -71,6 +75,7 @@ def generate_alien_profiles(n):
     return profiles
 
 
-aliens = generate_alien_profiles(5)
-for i, alien in enumerate(aliens, 1):
-    print(f"Alien {i}: {alien}")
+aliens = generate_alien_profiles(50)
+print(aliens)
+# for i, alien in enumerate(aliens, 1):
+#     print(f"Alien {i}: {alien}")
