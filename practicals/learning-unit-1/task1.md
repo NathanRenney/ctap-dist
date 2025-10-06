@@ -6,6 +6,9 @@ We need to start by building up our understanding of data types. These are fairl
 
 In addition to our resources, You can work through the Khan Academy and W3 schools interactive exercices if you do not feel you have a confident understanding of storing basic data types in variables yet.
 
+I would recommend working through W3 schools up to functions for this module. Feel free to spend a week on this!
+https://www.w3schools.com/python/
+
 Here's a little test for yourself - if you can't do this, explore the resources above and discuss with your tutors until this makes sense:
 
 Write a simple program that:
